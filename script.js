@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if(taskText !=="") {
             const newTask = document.createElement('li');    // Create new <li> element
             newTask.textContent = taskText;
+            newTask.classList.add('task-item');
 
              // Create a new "Remove" button
              //By default, when you create a <button> element in HTML without specifying a type, it defaults to type="submit".
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             //prevent your JavaScript from behaving as expected
             
             const removeBtn = document.createElement('button');
-           // removeBtn.type = 'button';  //This ensures the button won’t accidentally submit the form, even if it's nested inside one.
+            removeBtn.type = 'button';  //This ensures the button won’t accidentally submit the form, even if it's nested inside one.
             removeBtn.textContent = 'Remove';
             removeBtn.className = 'remove-btn';
 
