@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             //prevent your JavaScript from behaving as expected
             
             const removeBtn = document.createElement('button');
-            removeBtn.type = 'button';  //This ensures the button won’t accidentally submit the form, even if it's nested inside one.
+           // removeBtn.type = 'button';  //This ensures the button won’t accidentally submit the form, even if it's nested inside one.
             removeBtn.textContent = 'Remove';
             removeBtn.className = 'remove-btn';
 
